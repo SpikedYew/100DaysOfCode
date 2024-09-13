@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation on scroll with gsap</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.13/dist/lenis.css">
+</head>
+<body>
+    <div class="cookies-box hidden">
+        <h1>🍪 Cookies policy</h1>
+        <p>-> There are no cookies to eat! <br>
+            -> Have some milk! 🥛
+            
+        </p>
+    </div>
+    <div class="cookies">
+
+        <img src="cookies.svg" alt="">
+        
+    </div>
+
+    <section id="two">
+        <div class="introduction">
+            <img src="simple-logo.png" alt="">
+        <h1>This website, is my test of GSAP JS library. And i will test scroll-trigger. You can modify it as much as you want</h1>
+        <h2>📋 To do:</h2>
+        <p>🔜 Add responsivity</p>
+        <p>🔜 Add parallax scrolling</p>
+        </div>
+        <div class="portrait">
+            <button><a href="#one">Check ⤵️</a></button>
+        </div>
+        
+    </section>
+    <section class="entry" id="one">
+        <div class="container-left">
+            <img src="IMG_2087.webp" alt="">
+            <h2>Day 2 - click-to-reveal 🙌</h2>
+            <h3>-> Source code on my github: spikedyew.github.io ✍️</h3>
+            <ul>
+                <li>😅 This <strong>project</strong> took me to complete 3 hours</li>
+                <li>😎 With <strong>animation</strong> and deployment</li>
+                <li>🥳 This project was fairly <strong>simple</strong></li>
+            </ul>
+            <button>
+                Check more
+            </button>
+        </div>
+        <div class="container-right">
+            <img src="Untitled.gif" alt="" srcset="">
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script> 
+    <script src="script.js">
+        //scroll trigger
+
+const entries = document.querySelector('.entry');
+
+entries.forEach(entry => {
+    let containerLeft = entry.querySelector('.container-left');
+    let containerRight = entry.querySelector('.container-right');
+
+    gsap.set(containerLeft, {
+        xPercent: -100,
+        opacity: 0
+    })
+    gsap.set(containerRight, {
+        xPercent: 100,
+        opacity:0
+    })
+})
+
+
+    </script>
+    
+
+</body>
+</html>
