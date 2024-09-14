@@ -1,0 +1,52 @@
+@media only screen and (max-width: 800px) {
+    body {
+        width:100vw;
+    }
+    #one {
+        flex-direction: column;
+        height:fit-content;
+        width:100vw;
+    }
+    #two {
+        width:100vw;
+        flex-direction: column;
+        height:100vh;
+    }
+    h1, h2, h3, p {
+        
+    }
+    .container-left {
+        border-radius: 0;
+        width: 100% !important;
+        max-width: 100vw;
+
+        img {
+            width:90vw;
+        }
+    }
+    .container-right {
+        border-radius: 0;
+        width:100vw;
+        img {
+            width:100vw;
+        }
+    }
+    .cookies {
+        bottom:0px;
+        z-index: 9999;
+    }
+    .portrait {
+        width:80vw;
+        display:none;
+    }
+    .introduction {
+        width:90vw;
+        img {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    .cookies-box {
+        height:400px;
+    }
+}

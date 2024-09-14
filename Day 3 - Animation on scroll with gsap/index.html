@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Animation on scroll with gsap</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
     <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.13/dist/lenis.css">
 </head>
 <body>
@@ -30,7 +31,7 @@
         <p>🔜 Add parallax scrolling</p>
         </div>
         <div class="portrait">
-            <button><a href="#one">Check ⤵️</a></button>
+            <button onclick="scrollDown()">Check ⤵️</button>
         </div>
         
     </section>
@@ -57,25 +58,7 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script> 
     <script src="script.js">
-        //scroll trigger
-
-const entries = document.querySelector('.entry');
-
-entries.forEach(entry => {
-    let containerLeft = entry.querySelector('.container-left');
-    let containerRight = entry.querySelector('.container-right');
-
-    gsap.set(containerLeft, {
-        xPercent: -100,
-        opacity: 0
-    })
-    gsap.set(containerRight, {
-        xPercent: 100,
-        opacity:0
-    })
-})
-
-
+        //scroll trigger //in external file
     </script>
     
 
