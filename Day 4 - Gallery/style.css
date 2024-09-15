@@ -13,7 +13,7 @@
 h1 {
     padding:15px;
 }
-.container {
+.container-galeria-js {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -51,40 +51,40 @@ h1 {
     transform: scale(0.9);
     
 }
-.middle {
+.middle-galeria {
     border-radius: 10px;
     border:10px solid white;
     display: flex;
-    width: 300px;
-    height:300px;
+    width: 30vw;
+    height:30vh;
     overflow: hidden;
     box-shadow: 2px 2px 10px black;;
     
 }
-.blok {
+.blok-galeria {
     border-radius: 10px;
     z-index:-300;
     position: relative;
     background-color: white;
-    width:300px;
-    height:300px;
+    width:30vw;
+    height:30vh;
     flex: 1 0 auto;
-    transform: translateX(-300px);
+    transform: translateX(-30vw);
     border-radius: 10px;
     
     img {
         
         object-fit: cover;
-        width:300px;
-        height:300px;
+        width:30vw;
+        height:30vh;
     }
 }
-.contain {
+.contain-galeria {
     display: flex;
     transition: 0.2s ease-in-out;
 }
-.text {
-    width:50vw;
+.text-galeria {
+    /*width:50vw;*/
 }
 .hidden {
     display:none;
