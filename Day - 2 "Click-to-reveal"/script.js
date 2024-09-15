@@ -29,25 +29,27 @@
 
 "use strict";
 
-const btnShow = document.querySelector('.expand');
-const addClass = document.querySelector('.info-box-show');
-const arrow = document.querySelector('.down');
+const btnShows = document.querySelectorAll('.expand');
 
-// Funkcja do sprawdzenia aktualnej rotacji strzałki
-function getRotationValue() {
-    return window.getComputedStyle(arrow).getPropertyValue('transform');
-}
+btnShows.forEach((btnShow) => {
+    const addClass = btnShow.closest('.info-box').nextElementSibling;
+    const arrow = btnShow.querySelector('.arrow');
 
-
-// Ustawienie początkowej rotacji
-arrow.style.transform = 'rotate(45deg)';
-
-btnShow.addEventListener('click', function() {
-    if (getRotationValue() === 'matrix(0.707107, 0.707107, -0.707107, 0.707107, 0, 0)') { // Odpowiada 'rotate(45deg)'
-        addClass.classList.add('slide');
-        arrow.style.transform = 'rotate(225deg)';
-    } else {
-        addClass.classList.remove('slide');
-        arrow.style.transform = 'rotate(45deg)';
+    // Funkcja do sprawdzenia aktualnej rotacji strzałki
+    function getRotationValue() {
+        return window.getComputedStyle(arrow).getPropertyValue('transform');
     }
+
+    // Ustawienie początkowej rotacji
+    arrow.style.transform = 'rotate(45deg)';
+
+    btnShow.addEventListener('click', function() {
+        if (getRotationValue() === 'matrix(0.707107, 0.707107, -0.707107, 0.707107, 0, 0)') { // Odpowiada 'rotate(45deg)'
+            addClass.classList.add('slide');
+            arrow.style.transform = 'rotate(225deg)';
+        } else {
+            addClass.classList.remove('slide');
+            arrow.style.transform = 'rotate(45deg)';
+        }
+    });
 });
