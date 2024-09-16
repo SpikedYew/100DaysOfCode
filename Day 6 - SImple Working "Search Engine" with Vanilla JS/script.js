@@ -79,3 +79,4 @@ document.getElementById('myinput').addEventListener("keyup", function() {
         }
     }
 })
+// source: https://www.youtube.com/watch?v=gBluXDKo6d4
