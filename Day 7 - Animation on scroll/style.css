@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+
+* {
+ background-color: white;
+ color:black;
+ font-family: "Inter", system-ui;
+ margin: 0;
+ padding: 0;
+ box-sizing:border-box;
+ overflow-x: hidden;
+}
+section 
+{
+ height:100vh;
+ width: 100%;
+ display: flex;
+ align-items:center;
+ justify-content:center;
+ flex-direction:column;
+}
+.card 
+{
+ width:75vw;
+ height:50vh;
+ box-shadow: 1px 1px 10px 1px black;
+ border-radius: 30px;
+ padding:20px;
+ margin:10px;
+ transform: translateX(-400px);
+ transition: 0.5s ease-in-out;
+}
+/*For nth-of-type to work, they have to be in the same section 😛*/
+.card:nth-of-type(even) {
+ transform: translateX(400px);
+}
+.card.show 
+{
+ transform: translateX(0);
+}
+nav {
+    padding:10px;
+    width:100px;
+    height:100px;
+    transition: 0.4s ease-out;
+    position:fixed;
+}
+nav:hover {
+    transform: translateY(8px);
+    transition: 0.4s ease-in;
+    
+}
+.black-dot {
+    background: black;
+    color:white;
+    border-radius: 50px;
+    width:50px;
+    height:50px;
+    transition: 1s ease-in-out;
+    position: fixed;
+}
+.black-dot.animate {
+    transition: 1.2s ease-in-out;
+    height:100vh;
+    width:100vw;
+    transform: scale(10000%);
+    overflow: hidden;
+}
