@@ -36,7 +36,6 @@ function addTask() {
         const task = document.createElement('div');
         task.classList = 'tasks-container';
         task.innerHTML = `-> ${taskInput.value}`;
-        console.log(task.innerHTML);
         taskContainer.appendChild(task);
 
         
