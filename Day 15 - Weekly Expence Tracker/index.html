@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<body>
+
+<div id="myPlot" style="width:50%;max-width:700px"></div>
+<input type="number" id="userInput">
+<button onclick="add();">Click Me to Add Value</button>
+<button onclick="makeChart();">Display Chart</button>
+
+<script>
+let xArray = [55, 49, 44, 24, 15];
+const yArray = ["Italy", "France", "Spain", "USA", "Argentina"];
+
+
+function add() {
+
+    userInput = document.getElementById('userInput').value;
+    console.log(userInput);
+
+    xArray.push(Number(userInput)); // Adds a random number between 1 and 60
+    yArray.push(`x ${userInput}`)
+    console.log(xArray);
+    makeChart();
+    xArray.sort();
+    
+}
+function makeChart() {
+  // Add a new value to xArray
+  
+  
+  // Update the chart with the modified xArray and yArray
+  Plotly.react("myPlot", [{
+    x: xArray,
+    y: yArray,
+    type: "bar",
+    orientation: "h",
+    marker: { color: "rgba(0, 150, 255, 0.6)" }
+  }], { title: "World Wide Wine Production" });
+
+
+    const data = [{
+    x: xArray,
+    y: yArray,
+    type: "bar",
+    orientation: "h",
+    marker: { color: "rgba(0, 150, 255, 0.6)" }
+    }];
+
+const layout = { title: "World Wide Wine Production" };
+
+Plotly.newPlot("myPlot", data, layout);
+}
+
+// Initial plot
+
+</script>
+
+</body>
+</html>
