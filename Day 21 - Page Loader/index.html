@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Website</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="loader.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <button class="menu-reveal" id="btn"></button>
+      <ul class="menu hidden">
+        <li><a href="">Home</a></li>
+        <li><a href="">Oferta</a></li>
+        <li><a href="">Projekty</a></li>
+        <li><a href="">Kontakt</a></li>
+      </ul>
+    </nav>
+    <section class="head">
+      <div class="introduction">
+        <img class="image-head" src="IMG_2227.jpg" alt="" />
+        <div class="text-introduction">
+          <h1>Cześć! <br /></h1>
+          <h2>
+            Nazywam się Bartosz Chmielecki i z pasją tworzę wyjątkowe strony
+            internetowe
+          </h2>
+          <a href=""><img class="icon" src="github-black.svg" alt="" /></a>
+          <a href=""><img class="icon" src="instagram-black.svg" alt="" /></a>
+          <h1 style="text-align: center">▼</h1>
+        </div>
+      </div>
+    </section>
+    <div class="test-test">
+      <div class="block"></div>
+      <div class="svg-container">
+        <svg
+          width="607"
+          height="2638"
+          viewBox="0 0 607 2638"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M298.148 0V73.5943C297.873 121.584 310.158 133.913 351.664 132.945H542.718C584.523 131.477 604.5 135.293 603.735 190.87V997.5C606.908 1079.44 582.061 1106.71 501.706 1103H114.5C32.0921 1105.56 -1.08875 1111.32 3.56464 1184.5V2069C2.77093 2156.14 56.7161 2137.71 155.5 2143H486C563.741 2144.85 597.757 2147.52 603.735 2217.5V2421.73V2638"
+            stroke="black"
+            stroke-width="10"
+          />
+        </svg>
+      </div>
+      <section class="showcase">
+        <div class="container">
+          <div class="box-text">
+            <h1>▶︎ Unikalny Design</h1>
+            <p>
+              -> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Impedit, quasi consequuntur. Laudantium veniam voluptates,
+              provident, quis consectetur nisi hic repellat culpa velit
+              doloremque ut. Delectus vero facere iure excepturi sequi!
+            </p>
+          </div>
+          <div class="box-gif">
+            <img src="testGif.gif" alt="" />
+          </div>
+        </div>
+      </section>
+      <section class="showcase">
+        <div class="container-left">
+          <div class="box-text">
+            <h1>▶︎ Wyjątkowe Rozwiązania</h1>
+            <p>
+              -> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Impedit, quasi consequuntur. Laudantium veniam voluptates,
+              provident, quis consectetur nisi hic repellat culpa velit
+              doloremque ut. Delectus vero facere iure excepturi sequi!
+            </p>
+          </div>
+          <div class="box-gif"><img src="day 9.gif" alt="" /></div>
+        </div>
+      </section>
+      <section class="showcase">
+        <div class="container">
+          <div class="box-text">
+            <h1>▶︎ Responsive Layout</h1>
+            <p>
+              -> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Impedit, quasi consequuntur. Laudantium veniam voluptates,
+              provident, quis consectetur nisi hic repellat culpa velit
+              doloremque ut. Delectus vero facere iure excepturi sequi!
+            </p>
+          </div>
+          <div class="box-gif"><img src="testGif.gif" alt="" /></div>
+        </div>
+      </section>
+    </div>
+    <section class="form-submition">
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <input
+          type="hidden"
+          name="access_key"
+          value="49b6d729-2f0f-4cb9-9f58-72e0d5f38b4b"
+        />
+        <input type="hidden" name="subject" value="Nowy mail ze strony!" />
+        <input type="hidden" name="from_name" value="BartoszChmielecki.com" />
+        <input
+          type="hidden"
+          name="redirect"
+          value="https://bartoszchmielecki.com"
+        />
+        <input
+          type="checkbox"
+          name="botcheck"
+          class="hidden"
+          style="display: none"
+        />
+
+        <div class="formgroup" id="name-form">
+          <label for="name">Imię ▼</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+
+        <div class="formgroup" id="email-form">
+          <label for="email">E-mail ▼</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <div class="formgroup" id="message-form">
+          <label for="message">Wiadomość ▼</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        <div class="h-captcha" data-captcha="true"></div>
+        <input class="submit-button" type="submit" value="Wyślij" />
+      </form>
+      <div class="form-text">
+        <h1>▶︎ Darmowa Wycena</h1>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, ad!
+          Corporis dolorem magnam nisi officia eveniet odio, sit ipsum
+          temporibus accusantium. Sapiente molestias esse consectetur cumque
+          numquam placeat unde totam.
+        </p>
+      </div>
+    </section>
+    <section class="fotter">
+      <h3>Kontakt</h3>
+      <hr />
+      <p>+48 533 320 515</p>
+      <p>bartoszchmieleckikontakt@gmail.com</p>
+    </section>
+    <div class="loader-wrapper">
+      <span class="loader">
+        <span class="loader-inner"></span>
+      </span>
+    </div>
+    <script>
+      $(window).on("load", function () {
+        $(".loader-wrapper").fadeOut("slow");
+      });
+    </script>
+    <script src="https://web3forms.com/client/script.js" async defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
