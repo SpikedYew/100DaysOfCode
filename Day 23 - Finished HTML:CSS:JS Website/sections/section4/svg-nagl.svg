@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="170" height="170" viewBox="0 0 170 170">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-1, .cls-3 {
+        stroke: #fff;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        fill: none;
+        stroke-linecap: round;
+        stroke-width: 17.4px;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_71" data-name="Rectangle 71" class="cls-1" width="170" height="170"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_14" data-name="Mask Group 14" class="cls-2">
+    <path id="speaker-svgrepo-com" class="cls-3" d="M102.889,60.036h.085m4.157,0a4.242,4.242,0,1,1-4.242-4.242A4.242,4.242,0,0,1,107.131,60.036Zm21.21,59.389a25.452,25.452,0,1,1-25.452-25.452A25.452,25.452,0,0,1,128.341,119.425ZM70.649,178.813h64.479c9.5,0,14.255,0,17.884-1.85a16.965,16.965,0,0,0,7.415-7.415c1.85-3.63,1.85-8.381,1.85-17.884V53.249c0-9.5,0-14.255-1.85-17.884a16.966,16.966,0,0,0-7.415-7.415c-3.63-1.849-8.381-1.849-17.884-1.849H70.649c-9.5,0-14.255,0-17.884,1.849a16.967,16.967,0,0,0-7.415,7.415C43.5,38.994,43.5,43.746,43.5,53.249v98.415c0,9.5,0,14.255,1.849,17.884a16.966,16.966,0,0,0,7.415,7.415C56.394,178.813,61.146,178.813,70.649,178.813Z" transform="translate(-18.048 -17.298)"/>
+  </g>
+</svg>

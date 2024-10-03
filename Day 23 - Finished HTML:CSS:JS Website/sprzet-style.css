@@ -1,0 +1,166 @@
+/* FRACTALA I MIKSER */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.section-fractala {
+  margin-top: 0px;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  background-color: black;
+}
+
+.container-fractala-sides-1 {
+  width: 30%;
+  height: 100%;
+  overflow: hidden;
+}
+.container-fractala-sides-2 {
+  width: 30%;
+  height: 100%;
+  overflow: hidden;
+}
+.img-fractala {
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+  width: 100%;
+}
+.img-mikser-1 {
+  height: 50%;
+  margin-bottom: -10%;
+  width: 100%;
+  object-fit: cover;
+}
+.img-mikser-2 {
+  height: 60%;
+  width: 100%;
+  object-fit: cover;
+}
+.container-fractala-middle {
+  width: 30%;
+  height: 60%;
+  margin: auto;
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10vh 2vw 10vh 2vw;
+}
+/* KARTA DŹWIĘKOWA */
+
+.section-karta-dzwiekowa {
+  background-color: black;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.container-karta-dzwiekowa {
+  margin: auto;
+  width: 80vw;
+  height: 70vh;
+  background-color: white;
+  display: flex;
+}
+.karta-dzwiekowa-zdj {
+  overflow: hidden;
+  width: 60%;
+  height: 100%;
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+.karta-dzwiekowa-text {
+  width: 40%;
+  height: 100%;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10vh 5vw 10vh 5vw;
+}
+
+/* MIKROFON */
+.section-mikrofon {
+  width: 100vw;
+  height: 100vh;
+}
+.container-mikrofon {
+  position: absolute;
+  margin: 40px;
+  backdrop-filter: blur(10px);
+  border: solid 1px white;
+  padding: 5vh 3vw 5vh 3vw;
+  color: white;
+  width: 30vw;
+}
+.mikrofon-background-images {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+}
+.mikrofon-image-1 {
+  width: 70vw;
+  height: 100%;
+  object-fit: cover;
+}
+.mikrofon-image-2 {
+  width: 30vw;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* SŁUCHAWKI */
+
+.section-sluchawki {
+  background-image: url("sprzet/sluchawki/sluchawki1.jpg");
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+}
+.container-sluchawki {
+  margin: auto;
+  width: 70vw;
+  height: 60vh;
+  overflow: hidden;
+  display: flex;
+}
+.container-sluchawki-text {
+  width: 60%;
+
+  backdrop-filter: blur(10px);
+  border: solid 1px #4f4f4f;
+  padding: 10vh 5vw 10vh 5vw;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.container-sluchawki-img {
+  width: 40%;
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+#p-text {
+  padding: 1vh 1vw 1vh 1vw;
+}
+#h1-text-karta {
+  padding: 1vh 1vw 1vh 1vw;
+}

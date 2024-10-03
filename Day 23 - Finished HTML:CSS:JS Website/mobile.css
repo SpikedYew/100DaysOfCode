@@ -1,0 +1,546 @@
+/*phone width*/
+@media only screen and (max-width: 768px) {
+  .mikrofon-fix {
+    transform: scale(1.05) translateX(-10px);
+  }
+  .navbar {
+    z-index: 2;
+    margin-top: -60px;
+    overflow: hidden;
+  }
+
+  .portfolio {
+    margin-top: 60px;
+  }
+
+  .sprzet2 {
+    margin-top: 60px;
+  }
+
+  .main-page {
+    margin-top: 60px;
+    background-position: -70%;
+    height: 30vh;
+  }
+
+  .logo {
+    height: 30vh;
+    margin: auto;
+  }
+
+  .logo img {
+    width: 180px;
+    height: 180px;
+    margin-left: 20px;
+  }
+
+  /*opis*/
+
+  /*OPIS*/
+
+  /*NAGŁAŚNIANIE*/
+
+  .nagl {
+    flex-direction: column-reverse;
+    height: 100vh;
+  }
+
+  .zdjc {
+    z-index: 1;
+    position: relative;
+    background-color: #000000;
+    width: 100vw;
+    height: 60vh;
+  }
+  .cols-2 {
+    z-index: 1;
+    position: relative;
+    width: 100vw;
+    height: 55vh;
+    padding: 40px;
+    background-color: #000000;
+
+    h1 {
+      margin: 0;
+      margin-bottom: 20px;
+      font-size: 1.2em;
+    }
+    h2 {
+      margin: 0;
+      font-size: 1em;
+    }
+  }
+
+  .nagl-text {
+    z-index: 1;
+    position: relative;
+
+    width: 100vw;
+    height: 55vh;
+    padding: 40px;
+
+    h1 {
+      margin: 0;
+      margin-bottom: 20px;
+      font-size: 1.2em;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: 1em;
+    }
+
+    img {
+      margin: 0 0 0px 0px;
+      width: 60px;
+      height: 100px;
+      object-fit: contain;
+      padding: 0;
+    }
+  }
+
+  .button {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nagl-button {
+    width: 150px;
+    font-size: 15px;
+  }
+
+  /**/
+
+  .nagl-sprzet {
+    flex-direction: column-reverse;
+    height: 100vh;
+  }
+
+  .zdjc-sprzet {
+    z-index: 1;
+    position: relative;
+    background-color: #000000;
+    width: 100vw;
+    height: 60vh;
+  }
+  .cols-2 {
+    z-index: 1;
+    position: relative;
+    width: 100vw;
+    height: 55vh;
+    padding: 40px;
+    background-color: #000000;
+
+    h1 {
+      margin: 0;
+      margin-bottom: 20px;
+      font-size: 1.2em;
+    }
+    h2 {
+      margin: 0;
+      font-size: 1em;
+    }
+  }
+
+  .nagl-text-sprzet {
+    z-index: 1;
+    position: relative;
+
+    width: 100vw;
+    height: 55vh;
+    padding: 40px;
+
+    h1 {
+      margin: 0;
+      margin-bottom: 20px;
+      font-size: 1.2em;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: 1em;
+    }
+
+    img {
+      margin: 0 0 0px 0px;
+      width: 60px;
+      height: 100px;
+      object-fit: contain;
+      padding: 0;
+    }
+  }
+
+  /*STUDIO*/
+  .studio {
+    height: 100vh;
+  }
+  .container-studio {
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+
+    .col-1 {
+      width: 100%;
+      padding: 40px;
+      height: 50%;
+
+      h1 {
+        font-size: 2em;
+        margin-bottom: 10px;
+      }
+      img {
+        width: 60px;
+        margin: 0 0 0 0px;
+        padding: 0;
+      }
+    }
+
+    .col-2 {
+      width: 100%;
+      height: 50%;
+    }
+  }
+  .row-f {
+    flex-direction: column;
+    .col-1 {
+      width: 100%;
+    }
+    .col-2 {
+      margin-top: 40px;
+      width: 100%;
+    }
+  }
+
+  /*SPRZET*/
+
+  /*OFERTA TELEFONś*/
+  .container-box {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+
+    overflow: hidden;
+    -webkit-box-shadow: 0px 0px 33px -22px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0px 0px 33px -22px rgba(66, 68, 90, 1);
+    box-shadow: 0px 0px 33px -22px rgba(66, 68, 90, 1);
+  }
+
+  .parent-box {
+    overflow: hidden;
+  }
+  .hide-mobile {
+    display: none;
+  }
+
+  .child-box img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .child-box h5 {
+    background-color: white;
+    font-weight: 500;
+    font-size: medium;
+    padding: 20px;
+    float: left;
+    color: rgb(0, 0, 0);
+  }
+
+  .child-box .h3-o {
+    float: left;
+    display: inline;
+    width: 50%;
+    height: 10px;
+    margin: 0;
+    margin-left: 20px;
+    padding: 5px;
+    margin-bottom: 2vh;
+  }
+
+  .h3-o2 {
+    padding: 5px;
+    float: right;
+    display: inline;
+    width: 29%;
+  }
+
+  .galery {
+    height: 70vh;
+
+    .galery-box {
+      width: 100vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      img {
+        width: 400px;
+        height: 300px;
+        object-fit: cover;
+        padding: 10px;
+      }
+    }
+  }
+
+  /*FOTTER*/
+
+  .row-f .col-2 h1 {
+    font-size: 1em;
+  }
+
+  .row-f .col-1 h1 {
+    font-size: 1em;
+  }
+
+  .row-f .col-1 p {
+    font-size: 1em;
+  }
+
+  .row-f {
+    width: calc(100vw - 80px);
+    height: 70%;
+    padding-top: 40px;
+  }
+
+  .fotter {
+    height: 70vh;
+  }
+
+  .frame {
+    margin: 20px 0px 20px 0px;
+    width: 100%;
+    height: 375px;
+  }
+
+  iframe {
+    width: 100%;
+    height: 75%;
+  }
+
+  /* SPRZET MOBILE - NOWY*/
+
+  /*FRACTALA*/
+  #fractala-margin-mobile {
+    margin-top: 60px;
+  }
+  .section-fractala {
+    height: 100vh;
+    flex-direction: column-reverse;
+  }
+  .container-fractala-sides-1 {
+    width: 100vw;
+    height: 50vh;
+  }
+  .container-fractala-sides-2 {
+    display: none;
+  }
+  .container-fractala-middle {
+    width: 100vw;
+    height: 50vh;
+    padding: 40px;
+    color: white;
+    background-color: black;
+  }
+
+  /*KARTA DZWIEKOWA*/
+
+  .container-karta-dzwiekowa {
+    flex-direction: column-reverse;
+    width: 100vw;
+    height: 100vh;
+  }
+  .karta-dzwiekowa-text,
+  .karta-dzwiekowa-zdj {
+    width: 100%;
+    height: 50%;
+  }
+  .karta-dzwiekowa-text {
+    padding: 40px;
+    background-color: black;
+    color: white;
+  }
+
+  /* MIKROFON */
+  .container-mikrofon {
+    width: 100vw;
+    height: 50vh;
+    margin: 0;
+    border: none;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    color: black;
+  }
+  .mikrofon-image-2 {
+    display: none;
+  }
+  .mikrofon-image-1 {
+    width: 100%;
+    height: 50vh;
+    margin-top: 50vh;
+  }
+  /* SŁUCHAWKI */
+  .container-sluchawki {
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+  }
+  .container-sluchawki-text {
+    width: 100vw;
+    height: 50vh;
+    border: none;
+    padding: 40px;
+  }
+  .container-sluchawki-img {
+    height: 50vh;
+    width: 100vw;
+  }
+
+  /* GALERIA I NAGLASNIANIE PODSTRONA */
+
+  .floyel-koncert {
+    flex-direction: column;
+    width: 100vw;
+    margin-top: -40px;
+    height: 80vh;
+  }
+  .floyel-nagranie {
+    width: 100vw;
+    height: 100%;
+  }
+  .floyel-text {
+    width: 100vw;
+    height: 30vh;
+    margin-top: 0;
+    padding-top: 0;
+  }
+  .naglasnianie-start {
+    height: 90vh;
+  }
+  #reverse-koncert {
+    flex-direction: column;
+  }
+
+  /*Galeria sprzet/ nagłaśnianie*/
+  .gallery-padding {
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+  }
+  .gallery-slider {
+    width: 100vw;
+    height: 50vh;
+  }
+  .gallery-slider-text {
+    width: 100vw;
+    height: 50vh;
+    justify-content: baseline;
+  }
+
+  p {
+    font-size: calc(1.2vh + 0.8vw);
+    font-weight: 500;
+    padding: 0vh 1vw 3vh 1vw;
+  }
+
+  h1 {
+    padding: 3vh 1vw 3vh 1vw;
+    text-align: left;
+    font-size: calc(1.6vh + 1.2vw);
+    font-weight: bold;
+  }
+
+  #h1-naglasnianie {
+    padding: 0 3vw 0 3vw;
+    padding-bottom: 5vh;
+  }
+  #p-naglasnianie {
+    padding: 0 3vw 0 3vw;
+  }
+  #p-naglasnianie-gallery {
+    padding: 0 7vw 0 7vw;
+  }
+
+  .gallery-padding {
+    padding-top: 50px;
+  }
+
+  .main-page-200vh {
+    margin-top: 60px;
+    height: 180vh;
+  }
+  .section-1-main {
+    align-items: baseline;
+    img {
+      margin-top: 20vh;
+      margin-left: 15vw;
+      width: 80vw;
+    }
+  }
+  .floating-image {
+    width: 80vw;
+    top: 40vh;
+    right: 8vw;
+  }
+  .section-2-main-opis {
+    position: relative;
+    height: 80vh;
+    width: 90vw;
+    display: block;
+    z-index: 1;
+    h1,
+    h2,
+    p {
+      width: 85vw;
+    }
+    h2 {
+      padding: 3vh 1vw 3vh 1vw;
+      text-align: left;
+    }
+  }
+  .floating-image-2 {
+    width: 100vw;
+    bottom: -16vh;
+    right: -0vw;
+    z-index: -1;
+  }
+  .container-galeria-js {
+    flex-direction: column;
+  }
+  .middle-galeria {
+    width: 80vw;
+    height: 50vh;
+  }
+  .blok-galeria {
+    width: 80vw;
+    height: 50vh;
+    transform: translateX(-80vw);
+    img {
+      width: 80vw;
+      height: 50vh;
+    }
+  }
+  .show-display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: black;
+    padding-top: 20px;
+  }
+  .arrow-left,
+  .arrow-right {
+    z-index: 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .show-display {
+    display: none;
+  }
+}
