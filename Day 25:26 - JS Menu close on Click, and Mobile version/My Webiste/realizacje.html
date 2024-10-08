@@ -5,19 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Website</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </head>
   <body>
     <nav class="navbar">
       <button class="menu-reveal" id="btn"></button>
       <ul class="menu hidden">
-        <li><a id="close-onclick" href="">Home</a></li>
-        <li><a id="close-onclick" href="">Oferta</a></li>
-        <li><a id="close-onclick" href="">Projekty</a></li>
+        <li><a id="close-onclick" href="/My Webiste/index.html">Home</a></li>
+        <li><a id="close-onclick" href="/My Webiste/oferta.html">Oferta</a></li>
+        <li>
+          <a id="close-onclick" href="/My Webiste/realizacje.html"
+            >Realizacje</a
+          >
+        </li>
         <li><a id="close-onclick" href="#kontakt">Kontakt</a></li>
       </ul>
     </nav>
-    <a class="darmowa-wycena" href="#"> Darmowa Wycena </a>
-    <section class="head">
+    <a class="darmowa-wycena" href="#form-wycena"> Darmowa Wycena </a>
+    <!-- <section class="head">
       <div class="introduction">
         <img class="image-head" src="IMG_2227.jpg" alt="" />
         <div class="text-introduction">
@@ -31,9 +36,49 @@
           <h1 style="text-align: center">▼</h1>
         </div>
       </div>
+    </section> -->
+    <section class="showcase">
+      <div class="container card show">
+        <div class="box-text">
+          <h1>▶︎ MFC STUDIO</h1>
+          <p>
+            -> Przygotowanie projektu w Adobe XD. Zakodowanie strony w HTML, CSS
+            i JavaScript. Wdrożenie responsywności. Zoptymalizowanie SEO.
+            Przygotowanie unikalnych grafik i implementacja strony.
+          </p>
+          <button class="submit-button">
+            <a class="btn-oferta" href="https://mfcstudio.pl/" target="_blank"
+              >Odwiedź stronę</a
+            >
+          </button>
+        </div>
+        <div class="box-gif">
+          <img src="testGif.gif" alt="" />
+        </div>
+      </div>
     </section>
-
-    <div class="test-test">
+    <section class="showcase">
+      <div class="container-left card">
+        <div class="box-text">
+          <h1>▶︎ Telesystem Spj.</h1>
+          <p>
+            -> Przygotowanie projektu strony internetowej w Adobe XD. Stworzenie
+            strony w Wordpressie. Zoptymalizowanie SEO. Przygotowanie unikalnych
+            grafik i implementacja strony.
+          </p>
+          <button class="submit-button">
+            <a
+              class="btn-oferta"
+              href="https://telesystemspj.pl/"
+              target="_blank"
+              >Odwiedź stronę</a
+            >
+          </button>
+        </div>
+        <div class="box-gif"><img src="day 9.gif" alt="" /></div>
+      </div>
+    </section>
+    <!-- <div class="test-test">
       <div class="block"></div>
       <div class="svg-container">
         <svg
@@ -49,33 +94,8 @@
             stroke-width="10"
           />
         </svg>
-      </div>
-      <section class="showcase">
-        <div class="container card show">
-          <div class="box-text">
-            <h1>▶︎ Zwiększ widoczność swojej firmy</h1>
-            <p>
-              -> Twoja firma staje się dostępna 24/7 dla klientów na całym
-              świecie. Nowoczesna strona to klucz do bycia znalezionym online.
-            </p>
-          </div>
-          <div class="box-gif">
-            <img src="testGif.gif" alt="" />
-          </div>
-        </div>
-      </section>
-      <section class="showcase">
-        <div class="container-left card">
-          <div class="box-text">
-            <h1>▶︎ Zbuduj zaufanie</h1>
-            <p>
-              -> Profesjonalnie zaprojektowana strona wzmacnia wiarygodność
-              Twojej marki, przyciągając klientów i budując lojalność.
-            </p>
-          </div>
-          <div class="box-gif"><img src="day 9.gif" alt="" /></div>
-        </div>
-      </section>
+      </div> 
+
       <section class="showcase">
         <div class="container card">
           <div class="box-text">
@@ -88,8 +108,8 @@
           </div>
           <div class="box-gif"><img src="testGif.gif" alt="" /></div>
         </div>
-      </section>
-    </div>
+      </section> 
+    </div> -->
     <section class="form-submition">
       <form action="https://api.web3forms.com/submit" method="POST">
         <input
@@ -128,13 +148,13 @@
         <div class="h-captcha" data-captcha="true"></div>
         <input class="submit-button" type="submit" value="Wyślij" />
       </form>
-      <div class="form-text">
+      <div class="form-text" id="form-wycena">
         <h1>▶︎ Darmowa Wycena</h1>
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, ad!
-          Corporis dolorem magnam nisi officia eveniet odio, sit ipsum
-          temporibus accusantium. Sapiente molestias esse consectetur cumque
-          numquam placeat unde totam.
+          Potrzebujesz strony internetowej? Napisz do mnie, opisz czego
+          potrzebujesz, a ja przygotuję dla Ciebie wycenę – szybko, bez
+          zobowiązań i zupełnie za darmo. Skontaktuję się z Tobą w ciągu 24
+          godzin!
         </p>
       </div>
     </section>
@@ -144,10 +164,16 @@
       <p>+48 533 320 515</p>
       <p>bartoszchmieleckikontakt@gmail.com</p>
     </section>
+    <div class="loader"></div>
     <script src="https://web3forms.com/client/script.js" async defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <script src="script.js"></script>
+    <script>
+      $(window).on("load", function () {
+        $(".absolute-absolute").fadeOut("slow");
+      });
+    </script>
   </body>
 </html>
