@@ -1,0 +1,15 @@
+* {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: 202124;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background-color: #f9f4f2;
+  gap: 14px;
+}
