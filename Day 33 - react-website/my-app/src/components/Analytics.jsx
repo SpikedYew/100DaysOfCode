@@ -1,5 +1,7 @@
 import React from "react";
 import Laptop from "../assets/laptop.jpg";
+import { motion } from "framer-motion";
+import { Link } from "react-router-dom"; // Import Link
 
 export default function Analytics() {
   return (
@@ -19,9 +21,14 @@ export default function Analytics() {
             ducimus quas pariatur explicabo facere aliquid perspiciatis, harum
             libero facilis accusantium ut modi!
           </p>
-          <button className="bg-slate-600 w-[200px] rounded-sm font-medium mx-auto py-3 mt-6 text-white">
-            Get Started
-          </button>
+          <Link className="w-full  flex justify-center" to="/about">
+            <motion.button
+              className="bg-slate-600 w-[200px] rounded-sm font-medium py-3 mt-6 text-white text-center"
+              whileHover={{ scale: 1.02 }}
+            >
+              Check it out
+            </motion.button>
+          </Link>
         </div>
       </div>
     </div>

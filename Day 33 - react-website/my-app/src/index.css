@@ -7,4 +7,23 @@
 body {
   font-family: "Rethink Sans", sans-serif;
   background-color: white;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+* {
+  scroll-behavior: smooth;
+}
+*::-webkit-scrollbar {
+  display: none;
+}
+.bg-opacity-0 {
+  background-color: rgba(18, 20, 29, 0.242);
+}
+.check-hover {
+  transform: scale(1);
+  transition: ease-in-out 0.2s;
+}
+.check-hover:hover {
+  transform: scale(1.1);
+  transition: ease-in-out 0.2s;
 }

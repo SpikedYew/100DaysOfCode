@@ -1,9 +1,10 @@
+import { motion } from "framer-motion";
 import React from "react";
 import { ReactTyped, Typed } from "react-typed";
 
 export default function Hero() {
   return (
-    <div className="">
+    <div className="mt-24">
       <div className="max-w-[800px] mt-[-96px] w-full h-screen mx-auto text-center flex flex-col justify-center">
         <p className="text-slate-600 font-bold p-2">
           GROWING WITH DATA ANALYTICS
@@ -26,9 +27,12 @@ export default function Hero() {
         <p className="md:text-2xl text-xl font-bold text-slate-600 py-4">
           Monitor your data analytics to increase revenue for BTB, BTC and SASS
         </p>
-        <button className="bg-slate-600 w-[200px] rounded-sm font-medium mx-auto py-3 text-white">
-          Get Started
-        </button>
+        <motion.button
+          whileHover={{ scale: 1.02 }}
+          className="bg-slate-600 w-[200px] rounded-sm font-medium mx-auto py-3 text-white"
+        >
+          <a href="">Get Started</a>
+        </motion.button>
       </div>
     </div>
   );
