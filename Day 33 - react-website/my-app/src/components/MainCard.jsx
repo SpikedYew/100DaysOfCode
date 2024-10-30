@@ -19,19 +19,17 @@ export default function MainCard({
   };
 
   const cardVariants = {
-    hidden: { y: 100, opacity: 0 },
+    hidden: {
+      y: 100,
+      opacity: 0,
+    },
     visible: {
       y: 0,
       opacity: 1,
-      transition: {
-        duration: 0.6, // Slightly longer duration
-        ease: "easeOut", // Smoother easing for entry
-      },
     },
     exit: {
       y: 0,
       opacity: 0,
-      transition: { duration: 0.3, ease: "easeInOut" },
     },
   };
   return (
@@ -41,7 +39,11 @@ export default function MainCard({
         whileHover={{ scale: 1.01 }}
         initial="hidden"
         whileInView="visible"
-        exit="exit"
+        transition={{
+          duration: 0.6, // Slightly longer duration
+          ease: "easeInOut", // Smoother easing for entry
+          type: "tween",
+        }}
         variants={cardVariants}
         viewport={{ once: true, amount: 0.2 }}
         onClick={togglePopup}

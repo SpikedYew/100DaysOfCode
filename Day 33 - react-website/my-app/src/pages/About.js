@@ -1,5 +1,5 @@
 import React from "react";
-import Contact from "../components/Contact";
+
 import { motion, useAnimate } from "framer-motion";
 import "../styles.css";
 
@@ -9,8 +9,6 @@ export default function About() {
       className="mt-24"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
-    >
-      <Contact />
-    </motion.div>
+    ></motion.div>
   );
 }
