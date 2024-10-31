@@ -1,11 +1,18 @@
 import React from "react";
 import Laptop from "../assets/laptop.jpg";
-import { motion } from "framer-motion";
+
 import { Link } from "react-router-dom"; // Import Link
+import { motion } from "framer-motion";
 
 export default function Analytics() {
   return (
-    <div className="w-full bg-white py-16 px-4">
+    <motion.div
+      initial={{ opacity: 0, y: 200 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6 }}
+      viewport={{ once: true }}
+      className="w-full bg-white py-16 px-4"
+    >
       <div className="max-w-[1240px] mx-auto grid md:grid-cols-2">
         <img className="w-[500px] mx-auto my-4" src={Laptop} alt="/" />
         <div className="flex flex-col justify-center">
@@ -31,6 +38,6 @@ export default function Analytics() {
           </Link>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

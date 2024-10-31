@@ -1,5 +1,6 @@
 import React from "react";
 import MainCard from "./MainCard";
+import { motion } from "framer-motion";
 
 export default function Main() {
   const cardMap = [
@@ -30,7 +31,13 @@ export default function Main() {
     },
   ];
   return (
-    <div className=" h-[max-content] p-10 flex flex-col min-h-[30vh]  sm:h-[50vh] md:h-[50vh]  w-full bg-slate-800 text-white  md:flex-row justify-center items-center">
+    <motion.div
+      initial={{ opacity: 0, y: 100 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+      viewport={{ once: true }}
+      className=" h-[max-content] p-10 flex flex-col min-h-[30vh]  sm:h-[50vh] md:h-[50vh]  w-full bg-slate-800 text-white  md:flex-row justify-center items-center"
+    >
       {cardMap.map((card, index) => (
         <MainCard
           key={index}
@@ -42,6 +49,6 @@ export default function Main() {
           popupStyle={card.popupStyle}
         />
       ))}
-    </div>
+    </motion.div>
   );
 }

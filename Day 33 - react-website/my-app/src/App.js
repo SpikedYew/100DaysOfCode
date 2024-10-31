@@ -7,11 +7,13 @@ import Resources from "./pages/Resources";
 import Home from "./pages/Home";
 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Coockies from "./components/Coockies";
 
 function App() {
   return (
     <Router>
       <Navbar />
+      <Coockies />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />

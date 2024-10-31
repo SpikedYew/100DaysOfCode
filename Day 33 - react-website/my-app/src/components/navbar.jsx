@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { Link } from "react-router-dom"; // Import Link
+import { motion } from "framer-motion";
 
 export default function Navbar() {
   const [nav, setNav] = useState(true);
@@ -10,7 +11,18 @@ export default function Navbar() {
   };
 
   return (
-    <div className="fixed left-0 top-0 w-full bg-white shadow-md z-10">
+    <motion.div
+      initial={{ y: -100, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{
+        delay: 1,
+        ease: "easeInOut",
+        type: "spring",
+        stiffness: 120,
+        duration: 0.3,
+      }}
+      className="fixed left-0 top-0 w-full bg-white shadow-md z-10"
+    >
       <div className="flex text-black justify-around items-center h-24 max-w-[1240px] max-full mx-auto px-4">
         <h1 className="w-full text-3xl font-bold text-slate-600">REACT.</h1>
 
@@ -79,7 +91,7 @@ export default function Navbar() {
           </ul>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

@@ -35,7 +35,12 @@ export default function Hero() {
         >
           Grow with data.
         </motion.h1>
-        <div className="flex justify-center items-center ">
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 2 }}
+          className="flex justify-center items-center "
+        >
           <p className="md:text-5xl sm:text-4xl text-xl font-bold">
             Fast, flexsible financing for
           </p>
@@ -46,7 +51,7 @@ export default function Hero() {
             backSpeed={140}
             loop
           />
-        </div>
+        </motion.div>
         <p className="md:text-2xl text-xl font-bold text-slate-600 py-4">
           Monitor your data analytics to increase revenue for BTB, BTC and SASS
         </p>
