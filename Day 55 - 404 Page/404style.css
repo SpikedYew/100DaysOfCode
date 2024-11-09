@@ -1,0 +1,92 @@
+/* @font-face {
+  font-family: "Futura PT";
+  src: local("Futura PT Bold"), local("Futura-PT-Bold"),
+    url(fonts/FuturaPT-Bold.woff2) format("woff2"),
+    url(fonts/FuturaPT-Bold.woff) format("woff"),
+    url(fonts/FuturaPT-Bold.ttf) format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Futura PT";
+  src: local("Futura PT Light"), local("Futura-PT-Light"),
+    url(fonts/FuturaPT-Light.woff2) format("woff2"),
+    url(fonts/FuturaPT-Light.woff) format("woff"),
+    url(fonts/FuturaPT-Light.ttf) format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Futura PT";
+  src: local("Futura PT Medium"), local("Futura-PT-Medium"),
+    url(fonts/FuturaPT-Medium.woff2) format("woff2"),
+    url(fonts/FuturaPT-Medium.woff) format("woff"),
+    url(fonts/FuturaPT-Medium.ttf) format("truetype");
+  font-weight: 500;
+  font-style: normal;
+} */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nosifer&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box {
+  width: 400px;
+  height: 500px;
+}
+h1,
+p {
+  text-align: center;
+}
+h1 {
+  padding-bottom: 5%;
+  font-size: 3em;
+}
+p {
+  padding: 5%;
+  font-size: 1.2em;
+}
+.styling {
+  padding: 20px;
+  padding-left: 2vw;
+}
+a {
+  color: black;
+  background-color: white;
+  text-decoration: none;
+  padding: 4px;
+  border-radius: 20px;
+  transition: 0.3s ease-in-out;
+}
+a:hover {
+  color: white;
+  background-color: black;
+  transition: 0.3s ease-in-out;
+}
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 2em;
+  }
+  p {
+    font-size: 0.9em;
+  }
+  .styling {
+    padding: 80px;
+  }
+}
