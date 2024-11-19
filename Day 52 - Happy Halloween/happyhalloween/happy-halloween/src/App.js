@@ -152,7 +152,7 @@ function App() {
           y: { duration: 0.5, delay: 5 },
           height: { duration: 0.5, delay: 5 },
         }}
-        // onAnimationComplete={() => setBgColor("orange")}
+        // onAnimationComplete={() => setBgColor("orange")};
         // onAnimationComplete={() => setHeight("0")}
         style={{
           backgroundColor: "orange",
